@@ -49,7 +49,7 @@
     [
       "Black",
       "Green",
-      "$(&{If($is_git -and ! ($git_dirty)) {' \u25cb '} Else {''}})"
+      "$(&{If($is_git -and ! ($git_dirty)) {' \u2713 '} Else {''}})"
     ],
     ["Red", "Yellow", "$(&{If($git_local_state -eq '*' -and $git_dirty) {' \u00d7 '} Else {''}})"],
     ["Black", "Green", "$(&{
