@@ -53,12 +53,12 @@
     ],
     ["Red", "Yellow", "$(&{If($git_local_state -eq '*' -and $git_dirty) {' \u00d7 '} Else {''}})"],
     ["Black", "Green", "$(&{
-      If($git_remote_state -eq '=' -and ! $git_dirty) {' \u21c4 '} 
+      If($git_remote_state -eq '=' -and ! $git_dirty) {''} 
       Elseif($git_remote_state -eq '<' -and ! $git_dirty) {' \u279d '}
       Elseif($git_remote_state -eq '>' -and ! $git_dirty) {' \u2b60 '}
       Else {''}})"],
     ["Black", "Yellow", "$(&{
-      If($git_remote_state -eq '=' -and $git_dirty) {' \u21c4 '} 
+      If($git_remote_state -eq '=' -and $git_dirty) {''} 
       Elseif($git_remote_state -eq '<' -and $git_dirty) {' \u279d '}
       Elseif($git_remote_state -eq '>' -and $git_dirty) {' \u2b60 '}
       Else {''}})"],
